@@ -100,8 +100,8 @@ gulp.task('index', function () {
 });
 
 gulp.task('main', function () {
-  gulp.src('main')
-    .pipe(gulp.dest('dist'))
+  gulp.src('main/**/*')
+    .pipe(gulp.dest('dist/main'))
 });
 
 gulp.task('watch', ['clean'], function () {
