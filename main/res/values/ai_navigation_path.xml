@@ -1,0 +1,19 @@
+<resources>
+    <string name="expand_less_path">
+        M24 16
+        L12 28
+        L14.83 30.83
+        L24 21.66
+        L33.17 30.83
+        L36 28z
+    </string>
+
+    <string name="expand_more_path">
+        M24 26.34
+        L14.83 17.17
+        L12 20
+        L24 32
+        L36 20
+        L33.17 17.17z
+    </string>
+</resources>

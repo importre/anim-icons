@@ -1,0 +1,44 @@
+<resources>
+    <string name="play_path">
+        M38 24
+        L38 24
+        L16 24
+        L16 10z
+        M38 24
+        L38 24
+        L16 38
+        L16 24z
+    </string>
+
+    <string name="pause_path">
+        M36 38
+        L28 38
+        L28 10
+        L36 10z
+        M20 38
+        L12 38
+        L12 10
+        L20 10z
+    </string>
+
+    <string name="pause_from_path">
+        M12 10
+        L20 10
+        L20 38
+        L12 38z
+        M28 10
+        L36 10
+        L36 38
+        L28 38z
+    </string>
+    <string name="play_to_path">
+        M38 24
+        L38 24
+        L16 24
+        L16 10z
+        M38 24
+        L38 24
+        L16 38
+        L16 24z
+    </string>
+</resources>
