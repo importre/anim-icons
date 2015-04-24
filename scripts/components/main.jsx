@@ -219,7 +219,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
           <div>
             <bs.PageHeader>Sample</bs.PageHeader>
             <ul>
-              <li><a href="https://github.com/importre/anim-icons-sample">https://github.com/importre/anim-icons-sample</a></li>
+              <li><a href="https://github.com/importre/anim-icons/tree/master/sample">https://github.com/importre/anim-icons/tree/master/sample</a></li>
             </ul>
           </div>
 
