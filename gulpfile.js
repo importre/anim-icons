@@ -113,11 +113,11 @@ gulp.task('build', ['clean'], function () {
   gulp.start(['browserify', 'styles', 'less', 'index', 'main']);
 });
 
-gulp.task('default', function () {
-  console.log('Run "gulp watch or gulp build"');
-});
-
-gulp.task('deploy', ['build', 'browserify'], function () {
+gulp.task('deploy', function () {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());
+});
+
+gulp.task('default', function () {
+  console.log('Run "gulp watch or gulp build"');
 });
