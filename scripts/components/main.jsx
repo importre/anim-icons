@@ -163,6 +163,18 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
             <h1>{this.state.title}</h1>
 
             <p>{this.state.desc1}</p>
+
+            <div>
+              <a className="github-button" href="https://github.com/importre/anim-icons"
+                 data-count-href="/importre/anim-icons/stargazers"
+                 data-count-api="/repos/importre/anim-icons#stargazers_count"
+                 data-count-aria-label="# stargazers on GitHub" aria-label="Star importre/anim-icons on GitHub">Star</a>
+
+              <div className="g-plusone" data-size="medium" data-href="http://importre.github.io/anim-icons/"></div>
+            </div>
+
+            <div className="fb-like" data-href="http://importre.github.io/anim-icons/" data-layout="button_count"
+                 data-action="like" data-show-faces="true" data-share="true"></div>
           </bs.Jumbotron>
 
           <div>
@@ -219,7 +231,8 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
           <div>
             <bs.PageHeader>Sample</bs.PageHeader>
             <ul>
-              <li><a href="https://github.com/importre/anim-icons/tree/master/sample">https://github.com/importre/anim-icons/tree/master/sample</a></li>
+              <li><a href="https://github.com/importre/anim-icons/tree/master/sample">https://github.com/importre/anim-icons/tree/master/sample</a>
+              </li>
             </ul>
           </div>
 
