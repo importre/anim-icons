@@ -1,5 +1,5 @@
 # Animated Icons
-Animated icons implemented using AnimatedVectorDrawable.
+Animated icons implemented using [AnimatedVectorDrawable][1].
 
 
 ## Demo
@@ -8,3 +8,6 @@ Animated icons implemented using AnimatedVectorDrawable.
 
 ## Usage
 See http://importre.github.io/anim-icons
+
+
+[1]: https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable.html
