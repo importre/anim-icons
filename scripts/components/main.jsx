@@ -6,7 +6,7 @@ import RSVP from 'rsvp'
 import request from 'superagent'
 import mui from 'material-ui'
 import bs from 'react-bootstrap'
-import ColorPicker from 'react-color-picker'
+
 
 let Main = React.createClass({
 
@@ -151,7 +151,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
 
   render: function () {
     var home = 'https://github.com/importre/anim-icons';
-    var sample = 'https://github.com/importre/anim-icons/tree/master/sample';
+    var sample = home + '/tree/master/sample';
 
     return (
       <div>
