@@ -150,11 +150,14 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
   },
 
   render: function () {
+    var home = 'https://github.com/importre/anim-icons';
+    var sample = 'https://github.com/importre/anim-icons/tree/master/sample';
+
     return (
       <div>
-        <bs.Navbar brand={this.state.title} inverse toggleNavKey={0}>
-          <bs.Nav right eventKey={0}> {/* This is the eventKey referenced */}
-            <bs.NavItem eventKey={1} href='https://github.com/importre/anim-icons'>Fork on Github</bs.NavItem>
+        <bs.Navbar brand={this.state.title} toggleNavKey={0}>
+          <bs.Nav right eventKey={0}>
+            <bs.NavItem eventKey={1} href={home}>Fork on Github</bs.NavItem>
           </bs.Nav>
         </bs.Navbar>
 
@@ -165,11 +168,11 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
             <p>{this.state.desc1}</p>
 
             <div>
-              <a className="github-button" href="https://github.com/importre/anim-icons"
+              <a className="github-button" href="{home}"
                  data-count-href="/importre/anim-icons/stargazers"
                  data-count-api="/repos/importre/anim-icons#stargazers_count"
                  data-count-aria-label="# stargazers on GitHub" aria-label="Star importre/anim-icons on GitHub">Star</a>
-
+              <br/>
               <div className="g-plusone" data-size="medium" data-href="http://importre.github.io/anim-icons/"></div>
             </div>
 
@@ -231,7 +234,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
           <div>
             <bs.PageHeader>Sample</bs.PageHeader>
             <ul>
-              <li><a href="https://github.com/importre/anim-icons/tree/master/sample">https://github.com/importre/anim-icons/tree/master/sample</a>
+              <li><a href={sample}>{sample}</a>
               </li>
             </ul>
           </div>
