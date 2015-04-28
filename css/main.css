@@ -1430,6 +1430,8 @@ hr {
   overflow: hidden;
   background-color: #ff4081;
   border-radius: 50%;
+  text-align: center;
+  vertical-align: bottom;
   transform: translate3d(0, 0, 0);
 }
 .mui-floating-action-button .mui-floating-action-button-container.mui-is-disabled {
@@ -9319,4 +9321,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+ul,
+li {
+  margin-left: 10px;
+  margin-right: 10px;
 }
