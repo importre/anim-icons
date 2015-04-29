@@ -7,4 +7,6 @@
     <string name="pause">pause</string>
     <string name="expand_less">expand_less</string>
     <string name="expand_more">expand_more</string>
+    <string name="repeat">repeat</string>
+    <string name="repeat_one">repeat one</string>
 </resources>

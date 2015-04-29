@@ -46,4 +46,23 @@
             android:layout_height="wrap_content"
             tools:text="true/false" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <io.github.importre.animatedicons.RepeatButton
+            android:id="@+id/button3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="true/false" />
+    </LinearLayout>
 </LinearLayout>
