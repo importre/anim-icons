@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportHeight="48"
+    android:viewportWidth="48">
+
+    <group android:name="repeat_group">
+        <path
+            android:name="repeat"
+            android:fillColor="@color/ai_primary"
+            android:pathData="@string/repeat_path" />
+    </group>
+</vector>
