@@ -6,6 +6,7 @@ import RSVP from 'rsvp'
 import request from 'superagent'
 import mui from 'material-ui'
 import bs from 'react-bootstrap'
+import ColorPicker from 'react-colorpickr'
 
 
 let Main = React.createClass({
@@ -61,6 +62,7 @@ let Main = React.createClass({
       title: 'Animated Icons',
       desc1: 'Animated icons implemented using AnimatedVectorDrawable.',
       color: '#2196F3',
+      color1: '#2196F3',
       java: `<pre><code class="java">findViewById(R.id.b1).setOnClickListener(new View.OnClickListener() {
   @Override
   public void onClick(View v) {
@@ -145,7 +147,16 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
     var value = this.refs.color.getValue();
     if (!value) value = '#2196F3';
     this.setState({
-      color: value
+      color: value,
+      color1: value
+    });
+  },
+
+  onChange: function (color) {
+    var value = '#' + color.hex;
+    this.refs.color.setValue(value);
+    this.setState({
+      color1: value
     });
   },
 
@@ -173,6 +184,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
                  data-count-api="/repos/importre/anim-icons#stargazers_count"
                  data-count-aria-label="# stargazers on GitHub" aria-label="Star importre/anim-icons on GitHub">Star</a>
               <br/>
+
               <div className="g-plusone" data-size="medium" data-href="http://importre.github.io/anim-icons/"></div>
             </div>
 
@@ -196,10 +208,16 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
 
             <ul>
               <li>Set the color that you want</li>
+              <ColorPicker
+                ref="picker"
+                value={this.state.color1}
+                onChange={this.onChange}/>
+
               <mui.TextField hintText="Set your color"
                              ref="color"
                              onChange={this.handleChange}
                              defaultValue={this.state.color}/>
+
 
               <li>Click</li>
               <bs.Button onClick={this.handleSubmit} bsStyle='primary'>Download</bs.Button>

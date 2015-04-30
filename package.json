@@ -31,7 +31,7 @@
     "material-ui": "^0.7.3",
     "react": "^0.13.0",
     "react-bootstrap": "^0.21.0",
-    "react-colorpicker": "^0.3.11",
+    "react-colorpickr": "^1.2.1",
     "rsvp": "^3.0.18",
     "rx": "^2.5.2",
     "superagent": "^1.2.0"
