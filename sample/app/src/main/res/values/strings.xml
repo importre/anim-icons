@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AnimatedIcons</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+    <string name="expand_less">expand_less</string>
+    <string name="expand_more">expand_more</string>
+    <string name="repeat">repeat</string>
+    <string name="repeat_one">repeat one</string>
+</resources>

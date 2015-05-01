@@ -1,0 +1,31 @@
+<resources>
+    <string name="play_path">
+        M38 24 L38 24 L16 24 L16 10z
+        M38 24 L38 24 L16 38 L16 24z
+    </string>
+
+    <string name="pause_path">
+        M36 38 L28 38 L28 10 L36 10z
+        M20 38 L12 38 L12 10 L20 10z
+    </string>
+
+    <string name="pause_from_path">
+        M12 10 L20 10 L20 38 L12 38z
+        M28 10 L36 10 L36 38 L28 38z
+    </string>
+
+    <string name="play_to_path">
+        M38 24 L38 24 L16 24 L16 10z
+        M38 24 L38 24 L16 38 L16 24z
+    </string>
+
+    <string name="repeat_one_path">
+        M26 30 L26 18 L26 18 L24 18 L20 20 L20 22 L23 22 L23 30 L26 30 L26 30 Z
+        M14 34 H34 V28 L42 36 L34 44 V38 H10 V34 H14 V34 Z
+    </string>
+
+    <string name="repeat_path">
+        M14 14 L34 14 L34 20 L42 12 L34 4 L34 10 L24 10 L10 10 L10 22 L14 22 Z
+        M34 34 H14 V28 L6 36 L14 44 V38 H38 V26 H34 V34 Z
+    </string>
+</resources>
