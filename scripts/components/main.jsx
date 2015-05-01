@@ -96,7 +96,6 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
 
   handleSubmit: function (e) {
     e.preventDefault();
-    console.log('handleSubmit');
 
     var loadData = function (url, mime) {
       return new RSVP.Promise(function (resolve, reject) {
@@ -131,7 +130,6 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
       .subscribe(function (obj) {
         if (obj.name.endsWith('ai_colors.xml')) {
           obj.data = obj.data.replace('${color}', self.state.color);
-          console.log(obj.data)
         }
         zip.file(obj.name, obj.data);
       }, function (err) {
@@ -156,6 +154,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
     var value = '#' + color.hex;
     this.refs.color.setValue(value);
     this.setState({
+      color: value,
       color1: value
     });
   },
