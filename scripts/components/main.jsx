@@ -179,7 +179,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
             <p>{this.state.desc1}</p>
 
             <div>
-              <a className="github-button" href="{home}"
+              <a className="github-button" href="https://github.com/importre/anim-icons" data-icon="octicon-star"
                  data-count-href="/importre/anim-icons/stargazers"
                  data-count-api="/repos/importre/anim-icons#stargazers_count"
                  data-count-aria-label="# stargazers on GitHub" aria-label="Star importre/anim-icons on GitHub">Star</a>
@@ -224,8 +224,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
 
               <li>Unzip and copy <code>main</code> directory to your project</li>
 
-              <li>Import <code>&lt;YOUR_PACKAGE&gt;.R</code> in <code>io&#47;github&#47;importre&#47;animatedicons&#47;
-                *.java</code> if cannot resolve symbol
+              <li>Import <code>&lt;YOUR_PACKAGE&gt;.R</code> in <code>io&#47;github&#47;importre&#47;animatedicons&#47;*.java</code> if cannot resolve symbol
                 '<code>R</code>'
               </li>
 
@@ -244,7 +243,7 @@ findViewById(R.id.b2).setOnClickListener(new View.OnClickListener() {
             <bs.PageHeader>SDK_INT &lt; LOLLIPOP</bs.PageHeader>
 
             <ul>
-              <li>No animation</li>
+              <li>No animations</li>
               <li>The color is set by <code>DrawableCompat.setTint()</code></li>
             </ul>
           </div>
