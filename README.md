@@ -14,6 +14,8 @@ Animated icons implemented using [AnimatedVectorDrawable][1].
 ## Usage
 See http://importre.github.io/anim-icons
 
+Please open in Chrome (recommended)
+
 
 [1]: https://developer.android.com/reference/android/graphics/drawable/AnimatedVectorDrawable.html
 [2]: https://github.com/importre/anim-icons/blob/master/sample/app/src/main/java/io/github/importre/animatedicons/PlayPauseButton.java
