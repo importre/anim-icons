@@ -104,13 +104,18 @@ gulp.task('sample', function () {
     .pipe(gulp.dest('dist/sample'))
 });
 
+gulp.task('images', function () {
+  gulp.src('images/**/*')
+    .pipe(gulp.dest('dist/images'))
+});
+
 gulp.task('watch', ['clean'], function () {
-  gulp.start(['browserSync', 'watchTask', 'watchify', 'styles', 'less', 'index', 'sample']);
+  gulp.start(['browserSync', 'watchTask', 'watchify', 'styles', 'less', 'index', 'sample', 'images']);
 });
 
 gulp.task('build', ['clean'], function () {
   process.env.NODE_ENV = 'production';
-  gulp.start(['browserify', 'styles', 'less', 'index', 'sample']);
+  gulp.start(['browserify', 'styles', 'less', 'index', 'sample', 'images']);
 });
 
 gulp.task('deploy', function () {

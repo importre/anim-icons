@@ -135,6 +135,14 @@ let Main = React.createClass({
           </bs.Jumbotron>
 
           <div>
+            <ul>
+              <li><img src="images/play_pause.gif" alt="play_pause"/></li>
+              <li><img src="images/expand_more_less.gif" alt="expand_more_less"/></li>
+              <li><img src="images/repeat_one.gif" alt="repeat_one"/></li>
+            </ul>
+          </div>
+
+          <div>
             <bs.PageHeader>Usage</bs.PageHeader>
 
             <ul>
@@ -191,17 +199,6 @@ let Main = React.createClass({
               <li>No animations</li>
               <li>The color is set by <code>DrawableCompat.setTint()</code></li>
             </ul>
-          </div>
-
-          <div>
-            <bs.PageHeader>Demo</bs.PageHeader>
-            <div className="text-center">
-              <iframe width="315" height="315"
-                      src="https://www.youtube.com/embed/HGoS70fJ1-w"
-                      frameBorder="0"
-                      allowFullScreen>
-              </iframe>
-            </div>
           </div>
 
           <div>
