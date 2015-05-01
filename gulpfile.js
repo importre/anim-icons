@@ -99,18 +99,18 @@ gulp.task('index', function () {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('main', function () {
-  gulp.src('main/**/*')
-    .pipe(gulp.dest('dist/main'))
+gulp.task('sample', function () {
+  gulp.src('sample/**/*')
+    .pipe(gulp.dest('dist/sample'))
 });
 
 gulp.task('watch', ['clean'], function () {
-  gulp.start(['browserSync', 'watchTask', 'watchify', 'styles', 'less', 'index', 'main']);
+  gulp.start(['browserSync', 'watchTask', 'watchify', 'styles', 'less', 'index', 'sample']);
 });
 
 gulp.task('build', ['clean'], function () {
   process.env.NODE_ENV = 'production';
-  gulp.start(['browserify', 'styles', 'less', 'index', 'main']);
+  gulp.start(['browserify', 'styles', 'less', 'index', 'sample']);
 });
 
 gulp.task('deploy', function () {
