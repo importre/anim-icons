@@ -191,7 +191,8 @@ let Main = React.createClass({
               <div dangerouslySetInnerHTML={{__html: this.state.layout}}/>
 
               <li>Add listener and Invoke <code>toggle()</code></li>
-              <div dangerouslySetInnerHTML={{__html: this.state.java}}/>
+              <div dangerouslySetInnerHTML={{__html: this.state.j
+              ava}}/>
             </ul>
           </div>
 

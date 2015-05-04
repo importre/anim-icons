@@ -28,7 +28,6 @@
     "bootstrap": "^3.3.4",
     "filesaver.js": "^0.1.1",
     "jszip": "^2.5.0",
-    "material-ui": "^0.7.3",
     "react": "^0.13.0",
     "react-bootstrap": "^0.21.0",
     "react-colorpickr": "^1.2.1",
