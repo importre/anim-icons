@@ -4,7 +4,6 @@ import Rx from 'rx'
 import saveAs from 'filesaver.js'
 import RSVP from 'rsvp'
 import request from 'superagent'
-import mui from 'material-ui'
 import bs from 'react-bootstrap'
 import ColorPicker from 'react-colorpickr'
 
@@ -17,7 +16,6 @@ let Main = React.createClass({
       title: 'Animated Icons',
       desc1: 'Animated icons implemented using AnimatedVectorDrawable.',
       color: defaultColor,
-      color1: defaultColor,
       commonFiles: commonFiles,
       playPauseFiles: playPauseFiles,
       expandMoreLessFiles: expandMoreLessFiles,
@@ -26,6 +24,10 @@ let Main = React.createClass({
       java: javaExample,
       layout: layoutExample
     };
+  },
+
+  componentDidMount: function () {
+    this.refs.color.refs.input.getDOMNode().value = this.state.color;
   },
 
   download: function (e) {
@@ -55,12 +57,13 @@ let Main = React.createClass({
     };
 
     var files = [];
+    console.log(this.refs.playPause);
     files = files.concat(this.state.commonFiles);
-    if (this.refs.playPause.isChecked())
+    if (this.refs.playPause.getChecked())
       files = files.concat(this.state.playPauseFiles);
-    if (this.refs.expandMoreLess.isChecked())
+    if (this.refs.expandMoreLess.getChecked())
       files = files.concat(this.state.expandMoreLessFiles);
-    if (this.refs.repeatOne.isChecked())
+    if (this.refs.repeatOne.getChecked())
       files = files.concat(this.state.repeatOneFiles);
 
     var self = this;
@@ -88,17 +91,15 @@ let Main = React.createClass({
     var value = this.refs.color.getValue();
     if (!value) value = '#2196F3';
     this.setState({
-      color: value,
-      color1: value
+      color: value
     });
   },
 
   onChange: function (color) {
     var value = '#' + color.hex;
-    this.refs.color.setValue(value);
+    this.refs.color.refs.input.getDOMNode().value = value;
     this.setState({
-      color: value,
-      color1: value
+      color: value
     });
   },
 
@@ -108,7 +109,7 @@ let Main = React.createClass({
 
     return (
       <div>
-        <bs.Navbar brand={this.state.title} toggleNavKey={0}>
+        <bs.Navbar inverse brand={this.state.title} toggleNavKey={0}>
           <bs.Nav right eventKey={0}>
             <bs.NavItem eventKey={1} href={home}>Fork on Github</bs.NavItem>
           </bs.Nav>
@@ -149,36 +150,38 @@ let Main = React.createClass({
               <li>Select the color that you want</li>
               <ColorPicker
                 ref="picker"
-                value={this.state.color1}
+                value={this.state.color}
                 onChange={this.onChange}/>
 
-              <mui.TextField hintText="Set your color"
-                             ref="color"
-                             onChange={this.handleChange}
-                             defaultValue={this.state.color}/>
+              <bs.Input type="text"
+                        placeholder="Set your color"
+                        ref="color"
+                        onChange={this.handleChange}/>
 
 
               <li>Select icons and Click <b>Download</b> button</li>
-              <mui.Checkbox
-                defaultSwitched={true}
-                ref="playPause"
-                label="play & pause (PlayPauseButton.java)" />
 
-              <mui.Checkbox
-                defaultSwitched={true}
-                ref="expandMoreLess"
-                label="expand more & less (ExpandMoreLessButton.java)" />
+              <bs.Input type='checkbox'
+                        label="play & pause (PlayPauseButton.java)"
+                        ref="playPause"
+                        defaultChecked/>
 
-              <mui.Checkbox
-                defaultSwitched={true}
-                ref="repeatOne"
-                label="repeat & repeat one (RepeatButton.java)" />
+              <bs.Input type='checkbox'
+                        label="expand more & less (ExpandMoreLessButton.java)"
+                        ref="expandMoreLess"
+                        defaultChecked/>
+
+              <bs.Input type='checkbox'
+                        label="repeat & repeat one (RepeatButton.java)"
+                        ref="repeatOne"
+                        defaultChecked/>
+
               <bs.Button onClick={this.download} bsStyle='danger'>Download</bs.Button>
 
               <li>Unzip and copy <code>app/src/main</code> directory to your project</li>
 
-              <li>Import <code>&lt;YOUR_PACKAGE&gt;.R</code> in <code>io&#47;github&#47;importre&#47;animatedicons&#47;*.java</code> if cannot resolve symbol
-                '<code>R</code>'
+              <li>Import <code>&lt;YOUR_PACKAGE&gt;.R</code> in<code>
+                io&#47;github&#47;importre&#47;animatedicons&#47;*.java</code> if cannot resolve symbol '<code>R</code>'
               </li>
 
               <li>Make sure AppCompat version is <code>22.1.0</code> in <code>build.gradle</code></li>

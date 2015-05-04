@@ -90,7 +90,8 @@ gulp.task('less', function () {
 });
 
 gulp.task('watchTask', function () {
-  gulp.watch(p.scss, ['styles', 'less']);
+  gulp.watch(p.scss, ['styles']);
+  gulp.watch(p.less, ['less']);
 });
 
 gulp.task('index', function () {
