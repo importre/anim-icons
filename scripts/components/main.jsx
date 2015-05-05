@@ -137,9 +137,9 @@ let Main = React.createClass({
 
           <div>
             <ul>
-              <li><img src="images/play_pause.gif" alt="play_pause"/></li>
-              <li><img src="images/expand_more_less.gif" alt="expand_more_less"/></li>
-              <li><img src="images/repeat_one.gif" alt="repeat_one"/></li>
+              <li><img height="80px" src="images/play_pause.gif" alt="play_pause"/></li>
+              <li><img height="80px" src="images/expand_more_less.gif" alt="expand_more_less"/></li>
+              <li><img height="80px" src="images/repeat_one.gif" alt="repeat_one"/></li>
             </ul>
           </div>
 
@@ -191,8 +191,7 @@ let Main = React.createClass({
               <div dangerouslySetInnerHTML={{__html: this.state.layout}}/>
 
               <li>Add listener and Invoke <code>toggle()</code></li>
-              <div dangerouslySetInnerHTML={{__html: this.state.j
-              ava}}/>
+              <div dangerouslySetInnerHTML={{__html: this.state.java}}/>
             </ul>
           </div>
 
